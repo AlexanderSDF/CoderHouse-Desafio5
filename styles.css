@@ -1,0 +1,1048 @@
+/* -----CONDICIONES GENERALES--------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.ulCabeceraNavegacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  font-size: 5rem;
+  list-style-type: none;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* fondo de body importado desde https://www.svgbackgrounds.com/ */
+.paginaCompleta {
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23e2e2e2' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23c6c6c6' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23a9a9a9' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%238c8c8c' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%236f6f6f' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23535353' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23363636' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* ------BARRA DE NAVEGACION --------*/
+.navBar {
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedorlogoNavBar {
+  display: flex;
+}
+.logoNavBar {
+  width: 120px;
+  margin-bottom: 5px;
+}
+/* -------TITULOS EN PAGINAS --------*/
+h1 {
+  display: block;
+  font-size: 5rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 3.5rem;
+}
+
+/* -------------------------INDEX---------------------*/
+.mainIndex {
+  display: grid;
+  grid-template-areas:
+    "tituloIndex"
+    "seccionIndexSuperior"
+    "seccionIndexInferior";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  row-gap: 5px;
+  column-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.tituloIndex {
+  grid-area: tituloIndex;
+}
+.seccionIndexSuperior {
+  grid-area: seccionIndexSuperior;
+}
+.seccionIndexInferior {
+  grid-area: seccionIndexInferior;
+}
+
+.imagenIndexSuperior,
+.imagenIndexInferior {
+  width: 90%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.textoIndexSuperior,
+.textoIndexInferior {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: justify;
+}
+
+/* INDEX SUPERIOR */
+.seccionIndexSuperior {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  column-gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgFerrariConTitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.textoIndexSuperior {
+  width: 45%;
+}
+.tituloImgSup {
+  margin-top: 5px;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+}
+.seccionIndexInferior {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  column-gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgFerrariConEspecificaciones {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "imagenIndexInferior imagenIndexInferior imagenIndexInferior imagenIndexInferior"
+    "spec1 spec2 spec3 spec4"
+    "descrip1 descrip2 descrip3 descrip4";
+  justify-items: center;
+  align-items: end;
+}
+.imagenIndexInferior {
+  grid-area: imagenIndexInferior;
+}
+.spec1 {
+  grid-area: spec1;
+}
+.spec2 {
+  grid-area: spec2;
+}
+.spec3 {
+  grid-area: spec3;
+}
+.spec4 {
+  grid-area: spec4;
+}
+.descrip1 {
+  grid-area: descrip1;
+}
+.descrip2 {
+  grid-area: descrip2;
+}
+.descrip3 {
+  grid-area: descrip3;
+}
+.descrip4 {
+  grid-area: descrip4;
+}
+.spec1,
+.spec2,
+.spec3,
+.spec4 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+}
+.descrip1,
+.descrip2,
+.descrip3,
+.descrip4 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.textoIndexInferior {
+  width: 50%;
+}
+/* ---------------------------- HISTORIA------------------------------- */
+.contenidoHistoria {
+  display: grid;
+  grid-template-columns: 36% 35% 29%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "tituloHistoria tituloHistoria tituloHistoria"
+    "seccionIzquierda seccionCentro seccionDerecha";
+  align-items: stretch;
+  justify-items: center;
+}
+
+.tituloHistoria {
+  grid-area: tituloHistoria;
+}
+.seccionIzquierda {
+  grid-area: seccionIzquierda;
+}
+.seccionCentro {
+  grid-area: seccionCentro;
+}
+.seccionDerecha {
+  grid-area: seccionDerecha;
+}
+/* ------------------------------------VER ----------------------------------------------*/
+.txtHistoriaGrl {
+  font-size: 2rem;
+}
+/* PRIMERA SECCION  */
+
+.seccionIzquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.enzoFerrari {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgEnzoFerrari {
+  width: 70%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 5px;
+}
+.cocheAscari {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.imgCocheAscari,
+.imgCocheCgi {
+  width: 45%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 5px;
+}
+
+/* SEGUNDA SECCION */
+.seccionCentro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.imagenPrimeraVictoria {
+  width: 70%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 5px;
+}
+.contenedorImgPrimeraVic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textoHistoriaMarca,
+.textoHistoriaMarca2,
+.textoPrimerVictoria {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: justify;
+}
+
+/* TERCERA SECCION */
+.seccionDerecha {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "superiorIzquierda"
+    "superiorDerecha"
+    "inferiorIzquierda"
+    "inferiorDerecha";
+  justify-items: center;
+  align-items: center;
+  align-content: space-evenly;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.superiorIzquierda {
+  grid-area: superiorIzquierda;
+}
+.superiorDerecha {
+  grid-area: superiorDerecha;
+}
+.inferiorIzquierda {
+  grid-area: inferiorIzquierda;
+}
+.inferiorDerecha {
+  grid-area: inferiorDerecha;
+}
+
+.superiorIzquierda,
+.superiorDerecha,
+.inferiorIzquierda,
+.inferiorDerecha {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.imgSeccionSupIzquierda,
+.imgSeccionSupDerecha,
+.imgSeccionInfIzquierda,
+.imgSeccionInfDerecha {
+  width: 85%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.textHistoriaSecDer {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* ----------------------------PILOTOS---------------------- */
+
+.contenidoPilotos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "tituloPilotos tituloPilotos"
+    "pilotosHistoricos pilotosActuales";
+}
+.tituloPilotos {
+  grid-area: tituloPilotos;
+}
+.pilotosHistoricos {
+  grid-area: pilotosHistoricos;
+}
+.pilotosActuales {
+  grid-area: pilotosActuales;
+}
+
+.textPilotos {
+  font-size: 2rem;
+}
+
+/* SECCION PILOTOS HISTORICOS */
+.pilotosHistoricos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "tituloPilotosHistoricos tituloPilotosHistoricos"
+    "imagenFangio imagenLauda"
+    "imagenMichael imagenRaikkonen"
+    "imagenAlonso imagenVettel";
+  row-gap: 10px;
+  place-items: center;
+  justify-content: end;
+  align-items: start;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.tituloPilotosHistoricos {
+  margin-bottom: 15px;
+  grid-area: tituloPilotosHistoricos;
+}
+.imagenFangio {
+  grid-area: imagenFangio;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagenLauda {
+  grid-area: imagenLauda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagenMichael {
+  grid-area: imagenMichael;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagenRaikkonen {
+  grid-area: imagenRaikkonen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagenAlonso {
+  grid-area: imagenAlonso;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagenVettel {
+  grid-area: imagenVettel;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgPilotosHistoricos {
+  width: 90%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+/* SECCION PILOTOS ACTUALES */
+.pilotosActuales {
+  display: grid;
+  grid-template-areas:
+    "tituloPilotosActuales tituloPilotosActuales"
+    "pilotoActual1 pilotoActual2"
+    "escuderia2022 escuderia2022";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  place-items: center;
+  justify-content: end;
+  align-items: start;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.tituloPilotosActuales {
+  margin-bottom: 15px;
+  grid-area: tituloPilotosActuales;
+}
+.escuderia2022 {
+  grid-area: escuderia2022;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pilotoActual1 {
+  grid-area: pilotoActual1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pilotoActual2 {
+  grid-area: pilotoActual2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgEscuderiaActual {
+  width: 70%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.imgPilotosActuales {
+  width: 90%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+/* ------------------------- GALERIA------------------------------- */
+.contenidoGaleria {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "cochesHistoricos  grandesVictorias"
+    "trofeos trofeos";
+  align-items: center;
+  justify-items: center;
+}
+.imagenesGaleria {
+  height: auto;
+  width: 95%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/* SECCION COCHES HISTORICOS */
+.cochesHistoricos {
+  width: 95%;
+  grid-area: cochesHistoricos;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "tituloHistoricos tituloHistoricos tituloHistoricos"
+    "coche1 coche2 coche3"
+    "coche4 coche5 coche6";
+  justify-items: center;
+  row-gap: 10px;
+  column-gap: 10;
+  justify-content: space-between;
+}
+.tituloHistoricos {
+  grid-area: tituloHistoricos;
+}
+.coche1 {
+  grid-area: coche1;
+}
+.coche2 {
+  grid-area: coche2;
+}
+.coche3 {
+  grid-area: coche3;
+}
+.coche4 {
+  grid-area: coche4;
+}
+.coche5 {
+  grid-area: coche5;
+}
+.coche6 {
+  grid-area: coche6;
+}
+.coche1,
+.coche2,
+.coche3,
+.coche4,
+.coche5,
+.coche6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* SECCION GRANDES VICTORIAS */
+.grandesVictorias {
+  width: 95%;
+  grid-area: grandesVictorias;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "tituloVictorias tituloVictorias tituloVictorias"
+    "victoria1 victoria2 victoria3"
+    "victoria4 victoria5 victoria6";
+  justify-items: center;
+  row-gap: 10px;
+  column-gap: 10;
+  justify-content: space-between;
+}
+.tituloVictorias {
+  grid-area: tituloVictorias;
+}
+.victoria1 {
+  grid-area: victoria1;
+}
+.victoria2 {
+  grid-area: victoria2;
+}
+.victoria3 {
+  grid-area: victoria3;
+}
+.victoria4 {
+  grid-area: victoria4;
+}
+.victoria5 {
+  grid-area: victoria5;
+}
+.victoria6 {
+  grid-area: victoria6;
+}
+.victoria1,
+.victoria2,
+.victoria3,
+.victoria4,
+.victoria5,
+.victoria6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* SECCION TROFEOS */
+.trofeos {
+  width: 49%;
+  grid-area: trofeos;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "tituloTrofeos tituloTrofeos tituloTrofeos"
+    "trofeo1 trofeo2 trofeo3"
+    "trofeo4 trofeo5 trofeo6";
+  justify-items: center;
+  row-gap: 10px;
+  column-gap: 10;
+  justify-content: space-between;
+}
+.tituloTrofeos {
+  grid-area: tituloTrofeos;
+}
+.trofeo1 {
+  grid-area: trofeo1;
+}
+.trofeo2 {
+  grid-area: trofeo2;
+}
+.trofeo3 {
+  grid-area: trofeo3;
+}
+.trofeo4 {
+  grid-area: trofeo4;
+}
+.trofeo5 {
+  grid-area: trofeo5;
+}
+.trofeo6 {
+  grid-area: trofeo6;
+}
+.trofeo1,
+.trofeo2,
+.trofeo3,
+.trofeo4,
+.trofeo5,
+.trofeo6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textGaleria {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+/* -------------------------- SOMOS-------------------------------- */
+.imgIconSomos {
+  width: 55px;
+}
+.iconosMisRedes {
+  margin-top: 15px;
+}
+.contenidoSomos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.suscribite {
+  width: 39%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(105, 105, 105);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: solid 5px;
+  border-color: rgb(255, 255, 0);
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+.inpFormularioSuscripcion {
+  width: 95%;
+}
+.formularioSuscripcion {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255, 255, 0);
+}
+.botonesSomos {
+  width: 50%;
+  height: 30px;
+}
+.textoSomos {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: justify;
+}
+.contenedorTextoSomos {
+  width: 70%;
+}
+.iconoRedes {
+  margin-right: 20px;
+}
+/* -------------FOOTER ALL-------------- */
+footer {
+  margin: 20px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* ----------------------MEDIAQUARIS--------------------- */
+/* checkpoints 576px, 768px, 992px y 1200px. */
+/* ----------------------------------------MQ1 DESKTOP 1200 PX------------------------------*/
+@media screen and (max-width: 1200px) {
+  .ulCabeceraNavegacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    font-size: 5rem;
+    list-style-type: none;
+    margin: 20px;
+  }
+  /*------------ INDEX-------------- */
+  .textoIndexSuperior,
+  .textoIndexInferior {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: justify;
+  }
+  .imagenIndexSuperior,
+  .imagenIndexInferior {
+    width: 100%;
+  }
+  .spec1,
+  .spec2,
+  .spec3,
+  .spec4 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+  }
+  .descrip1,
+  .descrip2,
+  .descrip3,
+  .descrip4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  /*------------ HISTORIA-------------- */
+  .textoHistoriaMarca,
+  .textoHistoriaMarca2,
+  .textoPrimerVictoria {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: justify;
+  }
+  footer {
+    margin: 20px;
+    text-align: center;
+    font-size: 3.7rem;
+    font-weight: 600;
+  }
+}
+/* --------------------------------MQ2 TABLET 992PX ---------------------------------------*/
+@media screen and (max-width: 992px) {
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .ulCabeceraNavegacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 14px;
+    font-size: 4.6rem;
+    list-style-type: none;
+    margin: 10px;
+  }
+  /* ----------INDEX-------------- */
+  .textoIndexSuperior,
+  .textoIndexInferior {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: justify;
+  }
+  /* ----------GALERIA-------------- */
+  .cochesHistoricos {
+    width: 100%;
+    grid-area: cochesHistoricos;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "tituloHistoricos tituloHistoricos"
+      "coche1 coche2"
+      "coche3 coche4"
+      "coche5 coche6";
+  }
+  .grandesVictorias {
+    width: 100%;
+    grid-area: grandesVictorias;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "tituloVictorias tituloVictorias"
+      "victoria1 victoria2"
+      "victoria3 victoria4"
+      "victoria5 victoria6";
+  }
+  .trofeos {
+    width: 70%;
+    grid-area: trofeos;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "tituloTrofeos tituloTrofeos tituloTrofeos"
+      "trofeo1 trofeo2 trofeo3"
+      "trofeo4 trofeo5 trofeo6";
+  }
+  footer {
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+/* ------------------------------------MQ3 MOBILE 768PX-------------------------------------*/
+@media screen and (max-width: 768px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ulCabeceraNavegacion {
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    font-size: 3.8rem;
+    list-style-type: none;
+    margin: 10px;
+  }
+
+  /* ------------INDEX --------------*/
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenIndexInferior,
+  .imagenIndexSuperior {
+    width: 100%;
+  }
+  .spec1,
+  .spec2,
+  .spec3,
+  .spec4 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+  }
+  .descrip1,
+  .descrip2,
+  .descrip3,
+  .descrip4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  .seccionIndexSuperior {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 15px;
+    margin-bottom: 5%;
+  }
+  .imgFerrariConTitulo,
+  .textoIndexSuperior {
+    width: 90%;
+  }
+  .seccionIndexInferior {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .imgFerrariConEspecificaciones,
+  .textoIndexInferior {
+    width: 90%;
+  }
+  /* --------HISTORIA --------------*/
+  .contenidoHistoria {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccionDerecha {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "superiorIzquierda superiorDerecha"
+      "inferiorIzquierda inferiorDerecha";
+  }
+  /* --------PILOTOS --------------*/
+  .contenidoPilotos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "tituloPilotos"
+      "pilotosHistoricos"
+      "pilotosActuales";
+  }
+  .trofeos {
+    width: 100%;
+    grid-area: trofeos;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "tituloTrofeos tituloTrofeos"
+      "trofeo1 trofeo2"
+      "trofeo3 trofeo4"
+      "trofeo5 trofeo6";
+  }
+  /* --------GALERIA --------------*/
+  .contenidoGaleria {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "cochesHistoricos"
+      "grandesVictorias"
+      "trofeos";
+  }
+  /* ----------SOMOS--------------*/
+  .inpFormularioSuscripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .formularioSuscripcion {
+    width: 90%;
+    height: 30px;
+  }
+  .botonSomos {
+    width: 45%;
+    height: 30px;
+  }
+  footer {
+    margin: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+}
+
+/* -----------------------------------MQ4 MOBILE SMALL 576PX ----------------------*/
+@media screen and (max-width: 576px) {
+  .navBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ulCabeceraNavegacion {
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    font-size: 3.5rem;
+    list-style-type: none;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-size: 2.5rem;
+}
+  /* ----------INDEX------------- */
+  .spec1,
+  .spec2,
+  .spec3,
+  .spec4 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+  }
+  .descrip1,
+  .descrip2,
+  .descrip3,
+  .descrip4 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  /* ----------HISTORIA------------- */
+  .seccionDerecha {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "superiorIzquierda"
+      "superiorDerecha"
+      "inferiorIzquierda"
+      "inferiorDerecha";
+  }
+  .imgSeccionSupIzquierda,
+  .imgSeccionSupDerecha,
+  .imgSeccionInfIzquierda,
+  .imgSeccionInfDerecha {
+    width: 75%;
+  }
+/* ------PILOTOS-------------------- */
+  .textPilotos {
+  font-size: 1.5rem;
+  }
+  footer {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+}
