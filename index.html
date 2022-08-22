@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- linkeo deestilo de texto de google font -->
+    <!-------------------- IMPORT DE FUENTE------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
       rel="stylesheet"
     />
+    <!-------------------- IMPORT DE ANIMACIONES------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-------------------- IMPORT DE MI CSS------------------------>
     <link rel="stylesheet" href="styles.css" />
     <title>EssereFerrari</title>
   </head>
@@ -41,7 +44,7 @@
     <main class="mainIndex">
       <h1 class="tituloIndex">Escuderia Ferrari</h1>
       <section class="seccionIndexSuperior">
-        <div class="imgFerrariConTitulo">
+        <div data-aos="fade-left" class="imgFerrariConTitulo">
           <img
             class="imagenIndexSuperior"
             src="assets/images/general/ferrarindex.jpg"
@@ -49,7 +52,7 @@
           />
           <p class="tituloImgSup">Ferrari F1-75 - 2022</p>
         </div>
-        <div class="textoIndexSuperior">
+        <div data-aos="fade-right" class="textoIndexSuperior">
           <p>
             Bienvenidos a la pagina dedicada a la mayor comunidad
             automovilistica, simpatizante de la Scuderia Ferrari, denominados
@@ -62,7 +65,7 @@
       </section>
 
       <section class="seccionIndexInferior">
-        <div class="imgFerrariConEspecificaciones">
+        <div data-aos="fade-right" class="imgFerrariConEspecificaciones">
           <img
             class="imagenIndexInferior"
             src="assets/images/general/ferrarindex2.jpg"
@@ -77,7 +80,7 @@
           <p class="descrip3">BATTERY ENERGY</p>
           <p class="descrip4">MGU-K POWER</p>
         </div>
-        <div class="textoIndexInferior">
+        <div data-aos="fade-left" class="textoIndexInferior">
           <p>
             Mientras que la mayoría de los equipos y su aficion pierden su
             esencia, sus valores fundamentales y sus tradiciones, Ferrari se
@@ -97,5 +100,9 @@
         <p>Copyright 2022 - All rights reserved - EssereFerrari</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

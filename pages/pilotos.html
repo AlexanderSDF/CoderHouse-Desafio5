@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- linkeo deestilo de texto de google font -->
+    <!-------------------- IMPORT DE FUENTE------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
       rel="stylesheet"
     />
+    <!-------------------- IMPORT DE ANIMACIONES------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-------------------- IMPORT DE MI CSS------------------------>
     <link rel="stylesheet" href="../styles.css" />
     <title>Pilotos</title>
   </head>
@@ -39,7 +42,7 @@
     <main class="contenidoPilotos">
       <h1 class="tituloPilotos">Pilotos</h1>
       <!-- seccion 1 ira fotos y nombres de pilotos historicos -->
-      <section class="pilotosHistoricos">
+      <section data-aos="fade-right" class="pilotosHistoricos">
         <h2 class="tituloPilotosHistoricos">Pilotos Historicos</h2>
         <div class="imagenFangio">
           <img
@@ -91,7 +94,7 @@
         </div>
       </section>
       <!-- seccion 2 ira fotos y nombres de pilotos actuales -->
-      <section class="pilotosActuales">
+      <section data-aos="fade-left" class="pilotosActuales">
         <h2 class="tituloPilotosActuales">Pilotos Actuales</h2>
         <div class="escuderia2022">
           <img
@@ -125,5 +128,9 @@
         <p>Copyright 2022 - All rights reserved - EssereFerrari</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

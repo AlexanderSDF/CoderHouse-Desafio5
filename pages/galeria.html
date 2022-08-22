@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- linkeo deestilo de texto de google font -->
+    <!-------------------- IMPORT DE FUENTE------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
       rel="stylesheet"
     />
+    <!-------------------- IMPORT DE ANIMACIONES------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-------------------- IMPORT DE MI CSS------------------------>
     <link rel="stylesheet" href="../styles.css" />
     <title>Galeria</title>
   </head>
@@ -37,7 +40,7 @@
     </header>
     <!-- CUERPO DE LA PAGINA -->
     <main class="contenidoGaleria">
-      <section class="cochesHistoricos">
+      <section data-aos="fade-up" class="cochesHistoricos">
         <h2 class="tituloHistoricos">Coches Iconicos</h2>
         <div class="coche1">
           <img
@@ -89,7 +92,7 @@
         </div>
       </section>
       <!-- seccion 2  galeria de trofeos historicos de la escuderia-->
-      <section class="trofeos">
+      <section data-aos="fade-up" class="trofeos">
         <h2 class="tituloTrofeos">Trofeos</h2>
         <div class="trofeo1">
           <img
@@ -141,7 +144,7 @@
         </div>
       </section>
       <!-- seccion 3 galeria de victorias memorables de la escuderia-->
-      <section class="grandesVictorias">
+      <section data-aos="fade-up" class="grandesVictorias">
         <h2 class="tituloVictorias">Grandes victorias</h2>
         <div class="victoria1">
           <img
@@ -199,5 +202,9 @@
         <p>Copyright 2022 - All rights reserved - EssereFerrari</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

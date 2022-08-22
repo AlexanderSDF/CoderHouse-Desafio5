@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- linkeo deestilo de texto de google font -->
+    <!-------------------- IMPORT DE FUENTE------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
       rel="stylesheet"
     />
+    <!-------------------- IMPORT DE ANIMACIONES------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-------------------- IMPORT DE MI CSS------------------------>
     <link rel="stylesheet" href="../styles.css" />
     <title>Historia</title>
   </head>
@@ -37,7 +40,7 @@
     </header>
     <main class="contenidoHistoria">
       <h1 class="tituloHistoria">Historia Maranella</h1>
-      <section class="seccionIzquierda">
+      <section data-aos="fade-right" class="seccionIzquierda">
         <div class="enzoFerrari">
           <img
             class="imgEnzoFerrari"
@@ -81,7 +84,7 @@
         </div>
       </section>
       <!-- seccion 2 ira imagen y reseña historica de la Primer victoria de la escuderia  -->
-      <section class="seccionCentro">
+      <section data-aos="fade-up" class="seccionCentro">
         <div class="textoHistoriaMarca2">
           <p>
             La guerra termina en 1947 y con la posibilidad de usar su apellido,
@@ -120,7 +123,7 @@
         </div>
       </section>
       <!-- seccion 3 ira  una comparacion entre la historia y actualidad del circuito de monaco y la fabrica en Maranello -->
-      <section class="seccionDerecha">
+      <section data-aos="fade-left" class="seccionDerecha">
         <div class="superiorIzquierda">
           <img
             class="imgSeccionSupIzquierda"
@@ -163,5 +166,9 @@
         <p>Copyright 2022 - All rights reserved - EssereFerrari</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
