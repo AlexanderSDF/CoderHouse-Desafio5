@@ -712,6 +712,7 @@ h2 {
 }
 .contenedorTextoSomos {
   width: 70%;
+  margin-bottom: 20px;
 }
 
 .contendorGeneralRedes {
@@ -726,6 +727,7 @@ h2 {
   display: flex;
   width: 45%;
   margin-top: 5px;
+  margin-right: 5px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -734,6 +736,7 @@ h2 {
 
 .txtIconoRedes{
   font-size: 2rem;
+  color: black;
 }
 /* -------------FOOTER ALL-------------- */
 footer {
@@ -884,6 +887,7 @@ footer {
     font-size: 3.8rem;
     list-style-type: none;
     margin: 10px;
+    justify-content: space-around;
   }
 
   /* ------------INDEX --------------*/
@@ -992,6 +996,11 @@ footer {
     width: 45%;
     height: 30px;
   }
+  .textoSomos {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: justify;
+    }
   footer {
     margin: 20px;
     text-align: center;
@@ -1015,6 +1024,7 @@ footer {
     list-style-type: none;
     margin: 10px;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   h1 {
     font-size: 3.5rem;
@@ -1062,6 +1072,12 @@ footer {
   .textPilotos {
   font-size: 1.5rem;
   }
+/* ------SOMOS-------------------- */
+  .textoSomos {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: justify;
+    }
   footer {
     margin: 20px;
     text-align: center;
