@@ -922,6 +922,9 @@ footer {
     row-gap: 15px;
     margin-bottom: 5%;
   }
+  .seccionCentro {
+    margin-top: 15px;
+  }
   .imgFerrariConTitulo,
   .textoIndexSuperior {
     width: 90%;
